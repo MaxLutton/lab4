@@ -1,0 +1,27 @@
+This distribution contains 5 files:
+    2 .c source files
+    lab4a.c:
+        This program reads the current temperature every 1 second,
+	and prints it to log1 and stdout. The code for this came from
+	a combination of edison tutorials and a grove tutorial.
+    lab4b.c:
+        This program reads the current temperature and sends it to a
+	server while also receiving commands from the server. It
+	treats the display command as an invalid command. It also
+	prints the temperature and commands received to a log file
+	log2.
+   2 log files, as described above,
+   1 Makefile
+       This has 3 targets:
+           build: This compiles the 2 .c files.
+	   clean: This removes the 2 log files and 2 executable files
+	   created by the executables and the build target,
+	   respectively.
+	   dist: This creates this compressed tar folder.
+
+
+    I did not implement the extra credit, so neither lab4a nor
+    lab4b will print to the LCD. Also, lab4b will treat any
+    display command as invalid, writing it to the log2 file with
+    an 'I' appended to it.
+
